@@ -172,7 +172,7 @@ def build_config():
         },
         "eval": {
             "n_episodes": 0,
-            "batch_size": 1,
+            "batch_size": 0,
             "use_async_envs": False,
         },
         "wandb": {
