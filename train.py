@@ -106,6 +106,7 @@ def build_config():
         },
         "env": None,
         "policy": {
+            "repo_id": "rtalwar/autoresearch-diffusion-mar24",
             "type": "diffusion",
             "n_obs_steps": N_OBS_STEPS,
             "normalization_mapping": NORMALIZATION_MAPPING,
@@ -172,11 +173,14 @@ def build_config():
         },
         "eval": {
             "n_episodes": 0,
-            "batch_size": 1,
+            "batch_size": 0,
             "use_async_envs": False,
         },
         "wandb": {
-            "enable": False,
+            "enable": True,
+            "disable_artifact": True,
+            "project": "imitation_button_autoresearch",
+            "entity": "rtalwar"
         },
     }
 
