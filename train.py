@@ -106,7 +106,7 @@ def build_config():
         },
         "env": None,
         "policy": {
-            "repo_id": "rtalwar/autoresearch-diffusion-mar24",
+            "repo_id": "rtalwar/autoresearch-diffusion-master",
             "type": "diffusion",
             "n_obs_steps": N_OBS_STEPS,
             "normalization_mapping": NORMALIZATION_MAPPING,
