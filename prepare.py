@@ -127,7 +127,7 @@ def verify_setup():
         from lerobot.datasets.lerobot_dataset import LeRobotDatasetMetadata
         print(f"  Loading dataset metadata for {DATASET_REPO_ID}...")
         meta = LeRobotDatasetMetadata(DATASET_REPO_ID)
-        print(f"  Dataset: {meta.num_episodes} episodes, {meta.num_frames} frames")
+        print(f"  Dataset: {meta.total_episodes} episodes, {meta.total_frames} frames")
     except Exception as e:
         print(f"  ERROR: Could not access dataset: {e}")
         sys.exit(1)
